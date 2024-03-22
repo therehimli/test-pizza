@@ -136,8 +136,6 @@ closeBtn.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
-console.log(images);
-
 // Устанавливаем фоновое изображение при клике на него
 images = document.querySelectorAll(".content__menu--list img");
 images.forEach((img) => {
