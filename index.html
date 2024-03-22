@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img
+          class="header__logo--img"
+          src="assets/images/pizza.png"
+          alt="logo-image"
+        />
+        <div class="header__title--inner">
+          <p class="header__logo--title">PIZZA</p>
+          <p class="header__logo--title">CHEFF</p>
+        </div>
+      </a>
+
+      <ul class="header__nav">
+        <a href="index.html"><li class="header__item">Пиццы</li></a>
+        <a href="index.html"><li class="header__item">Напитки</li></a>
+        <a href="index.html">
+          <li class="header__item">Доставка и оплата</li></a
+        >
+        <a href="index.html"> <li class="header__item">Контакты</li></a>
+      </ul>
+    </header>
+
+    <div class="content">
+      <section class="content__banner">
+        <div class="content__profits">
+          <h2 class="content__profits--title">
+            Самая вкусная пицца в мире
+            <br />
+            <span class="content__profits--subtitle">только в Pizza Cheff</span>
+          </h2>
+
+          <ul class="content__profits--list">
+            <li class="profits__list--item">
+              <img
+                class="profits__list__item--image"
+                src="assets/images/hop.png"
+                alt="hop"
+              />
+
+              <div class="list__item--description">
+                <h3 class="item__description--title">ЛУЧШЕЕ ТЕСТО</h3>
+                <p class="item__description--subtitle">
+                  Мы создаем тесто только из отборной итальянской муки наивысшег
+                </p>
+              </div>
+            </li>
+
+            <li class="profits__list--item">
+              <img
+                class="profits__list__item--image"
+                src="assets/images/kitchen-pack.png"
+                alt="kitchen pack"
+              />
+
+              <div class="list__item--description">
+                <h3 class="item__description--title">ЛУЧШИЕ ПОВОРА</h3>
+                <p class="item__description--subtitle">
+                  Пиццы готовят самые профессиональные итальянские повара
+                </p>
+              </div>
+            </li>
+
+            <li class="profits__list--item">
+              <img
+                class="profits__list__item--image"
+                src="assets/images/seo-and-web.png"
+                alt="seo and web"
+              />
+
+              <div class="list__item--description">
+                <h3 class="item__description--title">ГАРАНТИЯ КАЧЕСТВА</h3>
+                <p class="item__description--subtitle">
+                  Наша пиццерия получила множество наград и признаний по всему
+                  миру
+                </p>
+              </div>
+            </li>
+
+            <li class="profits__list--item">
+              <img
+                class="profits__list__item--image"
+                src="assets/images/holidays.png"
+                alt="holidays"
+              />
+
+              <div class="list__item--description">
+                <h3 class="item__description--title">ОТБОРНЫЕ РЕЦЕПТЫ</h3>
+                <p class="item__description--subtitle">
+                  Мы используем рецепты от мировых лидиров в изготовлении пиццы
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <button class="content__profits--button btn">Выбрать пиццу</button>
+        </div>
+
+        <img
+          class="content__banner--image"
+          src="assets/images/pizza_big.png"
+          alt="Большая пицца"
+        />
+      </section>
+
+      <section class="content__menu">
+        <h2 class="content__menu--title">Выберите свою любимую пиццу</h2>
+        <ul class="content__menu--list"></ul>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__title--body">
+          <h2 class="footer__info--title">ХВАТИТ ДУМАТЬ!</h2>
+          <span class="footer__info--subtitle"
+            >ДОСТАВИМ ЗАКАЗ ЗА 30 МИНУТ!</span
+          >
+        </div>
+
+        <p class="footer__info--description">
+          Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления
+          заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ
+          бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим
+          сервисом и сделаем всё, чтобы наш клиент был доволен и не остался
+          голодный!
+        </p>
+      </div>
+
+      <form class="footer__form">
+        <input
+          class="form__input--name form__input"
+          type="text"
+          placeholder="Ваше имя"
+        />
+        <input
+          class="form__input--address form__input"
+          type="text"
+          placeholder="Адрес доставки"
+        />
+        <input
+          class="form__input--phone form__input"
+          type="text"
+          placeholder="Телефон"
+        />
+        <button class="btn btn--submit" type="submit">Оформить заказ</button>
+      </form>
+
+      <img class="footer__image" src="assets/images/pizzzzza.png" alt="Пицца" />
+    </footer>
+
+    <div class="popup">
+      <div class="popup__content">
+        <h2 class="popup--title">Спасибо за заказ!</h2>
+        <button class="btn--close btn">Закрыть</button>
+      </div>
+    </div>
+
+    <div class="full-image" onclick="this.style.display='none'"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
