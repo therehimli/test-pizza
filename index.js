@@ -5,7 +5,7 @@ const formElement = document.querySelector(".footer__form");
 const pizzaList = document.querySelector(".content__menu--list");
 const popup = document.querySelector(".popup");
 const closeBtn = document.querySelector(".btn--close");
-const images = document.querySelectorAll(".content__menu--list img");
+let images = document.querySelectorAll(".pizza-list--image");
 const fullImage = document.querySelector(".full-image");
 const pizzas = [
   {
@@ -136,7 +136,10 @@ closeBtn.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
+console.log(images);
+
 // Устанавливаем фоновое изображение при клике на него
+images = document.querySelectorAll(".content__menu--list img");
 images.forEach((img) => {
   img.addEventListener("click", function () {
     fullImage.style.backgroundImage = "url(" + img.src + ")";
