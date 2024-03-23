@@ -3,7 +3,9 @@
   --secondary-color: #a46b00;
 }
 
-* {
+*,
+*::before,
+*::after  {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,10 +13,15 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
   list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
